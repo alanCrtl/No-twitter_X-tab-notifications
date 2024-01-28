@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Remove twitter tab notification number",
+    "version": "1.0",
+    "description": "Remove twitter tab notification number",
+    "permissions": ["activeTab", "tabs"],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "remove notif twitter"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+    
+  }
+  
